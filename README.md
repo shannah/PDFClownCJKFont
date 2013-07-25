@@ -29,13 +29,13 @@ Make sure that the PDFClownCIDCJKFont.jar has been added to your classpath.
     // Write some Simplified Chinese
     Font simpChineseFont = CJKFont.loadChineseSimplified(doc);
     composer.setFont(simpChineseFont, 18);
-    composer.showText("特色条目", new Point2D.Double(10, 40);
+    composer.showText("特色条目", new Point2D.Double(10, 40));
 
 
     // Write some Traditional Chinese
     Font tradChineseFont = CJKFont.loadChineseTraditional(doc);
     composer.setFont(tradChineseFont, 18);
-    composer.showText("弱冠擢進士第", new Point2D.Double(10, 70);
+    composer.showText("弱冠擢進士第", new Point2D.Double(10, 70));
 
     // Write some Korean
     Font koreanFont = CJKFont.loadKorean(doc);
