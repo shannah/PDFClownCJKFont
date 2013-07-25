@@ -42,8 +42,9 @@ Make sure that the PDFClownCIDCJKFont.jar has been added to your classpath.
     composer.setFont(koreanFont, 18);
     composer.showText("위키백과, 우리 모두의 백과사전", new Point2D.Double(10,100));
 
-[See Full Example](https://github.com/shannah/PDFClownCJKFont/blob/master/test/ca/weblite/pdfclown/documents/contents/fonts/CJKFontTest.java)
-[View Resulting PDF](https://github.com/shannah/PDFClownCJKFont/blob/master/UnicodeTest.pdf?raw=true) (Requires that you have the Asian fonts installed on your system).
+* [See Full Example](https://github.com/shannah/PDFClownCJKFont/blob/master/test/ca/weblite/pdfclown/documents/contents/fonts/CJKFontTest.java)
+* [View Resulting PDF](https://github.com/shannah/PDFClownCJKFont/blob/master/UnicodeTest.pdf?raw=true) (Requires that you have the Asian fonts installed on your system).
+
 ##Credits
 
 * Used the fantastic [TCPDF](http://www.tcpdf.org/) PHP Library as a reference.
