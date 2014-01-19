@@ -247,6 +247,10 @@ public class CJKFont extends Font {
         return get(context, CJKFont.class.getResourceAsStream("cid0kr.php"));
     }
     
+    public static CJKFont loadArialUniCid0(Document context){
+        return get(context, CJKFont.class.getResourceAsStream("arialunicid0.php"));
+    }
+    
     protected CJKFont(Document context){
         super(context);
         document = context;
@@ -507,9 +511,11 @@ public class CJKFont extends Font {
                         
                         
                         for ( int i=0; i<todo.length; i+=2 ){
-                            descriptor.put(
-                                    (PdfName)todo[i], 
-                                    new PdfInteger((int)desc.get((String)todo[i+1])));
+                            if ( desc.containsKey((String)todo[i+1])){
+                                descriptor.put(
+                                        (PdfName)todo[i], 
+                                        new PdfInteger((int)desc.get((String)todo[i+1])));
+                            }
                         }
                         
                         descriptor.put(PdfName.FontName, new PdfName("ArialUnicodeMS"));

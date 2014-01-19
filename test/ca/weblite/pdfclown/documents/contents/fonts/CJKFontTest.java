@@ -82,9 +82,19 @@ public class CJKFontTest {
         composer.setFont(koreanFont, 18);
         composer.showText("위키백과, 우리 모두의 백과사전", new Point2D.Double(10,190));
 
+        // Write some Russian
+        Font arial = CJKFont.loadArialUniCid0(doc);
+        composer.setFont(arial, 18);
+        composer.showText("Москва политический центр России, на ее территории разместились ", new Point2D.Double(10,220));
+        
+        
         composer.end();
         composer.flush();
         file.save("UnicodeTest.pdf", SerializationModeEnum.Standard);
+        
+        
+        
+       
         
     }
     
