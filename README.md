@@ -17,6 +17,12 @@ font-pack if they try to open a PDF for which they don't have fonts.
 * Java 7 (It could probably be compiled for Java 6, but I might be using some Java 7 constructs, and Java 7 is all I need for now).
 
 
+##Download
+
+[PDFClownCID0CJKFont.jar](https://github.com/shannah/PDFClownCJKFont/raw/master/dist/PDFClownCID0CJKFont.jar)
+
+
+
 ##Usage
 
 Make sure that the PDFClownCIDCJKFont.jar has been added to your classpath.
@@ -41,6 +47,11 @@ Make sure that the PDFClownCIDCJKFont.jar has been added to your classpath.
     Font koreanFont = CJKFont.loadKorean(doc);
     composer.setFont(koreanFont, 18);
     composer.showText("위키백과, 우리 모두의 백과사전", new Point2D.Double(10,100));
+    
+    // Write some Russian
+    Font arial = CJKFont.loadArialUniCid0(doc);
+    composer.setFont(arial, 18);
+    composer.showText("Москва политический центр России, на ее территории разместились ", new Point2D.Double(10,220));
 
 * [See Full Example](https://github.com/shannah/PDFClownCJKFont/blob/master/test/ca/weblite/pdfclown/documents/contents/fonts/CJKFontTest.java)
 * [View Resulting PDF](https://github.com/shannah/PDFClownCJKFont/blob/master/UnicodeTest.pdf?raw=true) (Requires that you have the Asian fonts installed on your system).
