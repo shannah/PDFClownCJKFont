@@ -55,6 +55,7 @@ Make sure that the PDFClownCIDCJKFont.jar has been added to your classpath.
 
 * [See Full Example](https://github.com/shannah/PDFClownCJKFont/blob/master/test/ca/weblite/pdfclown/documents/contents/fonts/CJKFontTest.java)
 * [View Resulting PDF](https://github.com/shannah/PDFClownCJKFont/blob/master/UnicodeTest.pdf?raw=true) (Requires that you have the Asian fonts installed on your system).
+* [Java Docs](https://rawgithub.com/shannah/PDFClownCJKFont/master/dist/javadoc/index.html)
 
 ##Credits
 
